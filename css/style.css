@@ -821,10 +821,49 @@ h1, h2, h3 { line-height: 1.1; }
   }
   .nav-links a::after { display: none; }
 
-  /* Hero */
-  .ht-radio, .ht-chaos { font-size: clamp(3.5rem, 20vw, 6rem); }
-  .hero-cta { flex-direction: column; align-items: center; }
-  .hero-cta .btn { width: 100%; max-width: 280px; }
+  /* --- Desktop & Laptop Styles (Default) --- */
+
+/* Keeps titles very prominent on large screens */
+.ht-radio, .ht-chaos { 
+  font-size: 5.5rem; 
+}
+
+/* Positions CTA buttons side-by-side on desktop */
+.hero-cta { 
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  gap: 1rem; /* Adds spacing between horizontal buttons */
+}
+
+/* Standard desktop button width */
+.hero-cta .btn { 
+  width: auto; 
+  min-width: 180px;
+}
+
+
+/* --- Mobile & Tablet Styles (Screens under 1024px) --- */
+@media (max-width: 1024px) {
+  
+  /* Fluidly scales text down so it doesn't break or overflow */
+  .ht-radio, .ht-chaos { 
+    font-size: clamp(2.5rem, 12vw, 4rem); 
+  }
+  
+  /* Stacks buttons vertically on smaller screens */
+  .hero-cta { 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 0.75rem;
+  }
+  
+  /* Stretches buttons to be easily tappable targets */
+  .hero-cta .btn { 
+    width: 100%; 
+    max-width: 280px; 
+  }
+}
 
   /* Tour */
   .tour-card {
