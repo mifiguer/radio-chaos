@@ -957,9 +957,33 @@ h1, h2, h3 { line-height: 1.1; }
   font-style: italic;
 }
 
-/* Mobile: tighten padding */
-@media (max-width: 640px) {
-  .catalog-table th,
-  .catalog-table td { padding: 0.75rem 0.9rem; }
-  .col-num { padding-left: 0.75rem !important; }
+@media (max-width: 768px) {
+  /* 1. Force the two words to stack vertically on mobile */
+  .hero-title {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    line-height: 0.85;
+    white-space: normal; /* Allows text wrapping if needed */
+  }
+
+  /* 2. Adjust fluid sizing boundaries for smaller viewports */
+  .ht-radio, 
+  .ht-chaos {
+    font-size: clamp(3rem, 16vw, 6rem);
+  }
+
+  /* 3. Soften text strokes and shadows so it doesn't look messy at smaller sizes */
+  .ht-chaos {
+    -webkit-text-stroke: 1px var(--gold);
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.6);
+  }
+
+  /* 4. Ensure buttons stack cleanly on narrow mobile devices */
+  .hero-cta {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
 }
