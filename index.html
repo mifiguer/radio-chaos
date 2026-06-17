@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Radio Chaos — Official Website. Tour dates, photos, and more." />
+  <title>Radio Chaos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;600&family=Lato:wght@300;400;700&family=Sekuya&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ░░ NAV ░░ -->
+  <header class="site-header" id="top">
+    <nav class="nav-inner" role="navigation" aria-label="Main navigation">
+      <a href="#top" class="nav-logo" aria-label="Radio Chaos – back to top">
+        <span class="logo-main">Radio</span><span class="logo-accent">Chaos</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navMenu" role="list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tour">Gig Dates</a></li>
+        <li><a href="#photos">Photos</a></li>
+        <li><a href="#songs">Songs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ░░ HERO ░░ -->
+    <section class="hero" id="home" aria-label="Hero">
+      <canvas class="noise-canvas" id="noiseCanvas" aria-hidden="true"></canvas>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Est. 2016 · Rock &amp; Roll</p>
+        <h1 class="hero-title">
+          <span class="ht-radio">Radio</span>
+          <span class="ht-chaos">Chaos</span>
+        </h1>
+        <p class="hero-tagline">Loud. Honest. Unfiltered.</p>
+        <div class="hero-cta">
+          <a href="#tour" class="btn btn-primary">See Gig Dates</a>
+          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ░░ BAND PHOTO STRIP ░░ -->
+    <section class="band-strip" aria-label="Band photo">
+      <img src="images/band-wide.jpg" alt="Radio Chaos band photo" style="width:100%; height:clamp(200px,30vw,420px); object-fit:cover; display:block;" />
+    <!-- ░░ TOUR DATES ░░ -->
+    <section class="section tour-section" id="tour">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">On the Road</p>
+          <h2 class="section-title">Gig Dates</h2>
+        </header>
+
+        <div class="tour-list" role="list">
+
+          <!-- ══════════════════════════════════════════
+               ADD / EDIT SHOWS HERE
+               Copy one <article> block per show.
+               Change td-month, td-day, tour-venue,
+               tour-location, and tour-time as needed.
+               For past shows add class "tour-card--past"
+               to the <article> and change the badge to
+               tour-badge--past with text "Past Show".
+          ══════════════════════════════════════════ -->
+
+          <article class="tour-card" role="listitem">
+            <div class="tour-date">
+              <span class="td-month">JAN</span>
+              <span class="td-day">14</span>
+            </div>
+            <div class="tour-info">
+              <h3 class="tour-venue">The Rusty Nail</h3>
+              <p class="tour-location">Austin, TX</p>
+            </div>
+            <div class="tour-meta">
+              <span class="tour-time">9:00 PM</span>
+              <span class="tour-badge tour-badge--upcoming">Upcoming</span>
+            </div>
+          </article>
+
+          <article class="tour-card" role="listitem">
+            <div class="tour-date">
+              <span class="td-month">FEB</span>
+              <span class="td-day">02</span>
+            </div>
+            <div class="tour-info">
+              <h3 class="tour-venue">Midnight Lounge</h3>
+              <p class="tour-location">San Antonio, TX</p>
+            </div>
+            <div class="tour-meta">
+              <span class="tour-time">8:30 PM</span>
+              <span class="tour-badge tour-badge--upcoming">Upcoming</span>
+            </div>
+          </article>
+
+          <article class="tour-card" role="listitem">
+            <div class="tour-date">
+              <span class="td-month">FEB</span>
+              <span class="td-day">20</span>
+            </div>
+            <div class="tour-info">
+              <h3 class="tour-venue">The Iron Horse</h3>
+              <p class="tour-location">Houston, TX</p>
+            </div>
+            <div class="tour-meta">
+              <span class="tour-time">9:30 PM</span>
+              <span class="tour-badge tour-badge--upcoming">Upcoming</span>
+            </div>
+          </article>
+
+          <article class="tour-card tour-card--past" role="listitem">
+            <div class="tour-date">
+              <span class="td-month">DEC</span>
+              <span class="td-day">15</span>
+            </div>
+            <div class="tour-info">
+              <h3 class="tour-venue">The Broken String</h3>
+              <p class="tour-location">New Orleans, LA</p>
+            </div>
+            <div class="tour-meta">
+              <span class="tour-time">8:00 PM</span>
+              <span class="tour-badge tour-badge--past">Past Show</span>
+            </div>
+          </article>
+
+        </div><!-- /.tour-list -->
+
+        <p class="tour-note">More dates coming soon — follow us on social for announcements.</p>
+      </div>
+    </section>
+
+    <!-- ░░ PHOTOS ░░ -->
+    <section class="section photos-section" id="photos">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">In the Frame</p>
+          <h2 class="section-title">Photos</h2>
+        </header>
+
+        <div class="photo-grid" role="list" aria-label="Photo gallery">
+
+          <!-- ── Replace src="" with real image paths ── -->
+          <figure class="photo-item photo-item--large" role="listitem">
+<img src="images/Jaime-LVRG.jpeg" alt="Jaime Martinez" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;" />
+          </figure>
+
+          <figure class="photo-item photo-item--large" role="listitem">
+<img src="images/MiGGs-BassBGV.jpeg" alt="Describe what's in the photo" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;" />
+          </figure>
+
+          <figure class="photo-item photo-item--large" role="listitem">
+<img src="images/EmilVila-DrummerBGV.jpeg" alt="Describe what's in the photo" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;" />
+          </figure>
+
+          <figure class="photo-item photo-item--large" role="listitem">
+<img src="images/JoshStivers-LGBGV.jpeg" alt="Describe what's in the photo" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;" />
+          </figure>
+
+          <figure class="photo-item photo-item--large" role="listitem">
+<img src="images/ChrisMora-KeyboardBGV.jpeg" alt="Describe what's in the photo" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;" />
+          </figure>
+
+
+        </div><!-- /.photo-grid -->
+
+        <!-- ── Video embed placeholder ── -->
+        <div class="video-block">
+          <h3 class="video-label">Latest Video</h3>
+          <div class="video-placeholder" role="img" aria-label="Video placeholder — replace with a YouTube embed">
+            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none"/></svg>
+            <p>Paste a YouTube <code>&lt;iframe&gt;</code> here</p>
+            <p class="ph-hint">Recommended: 16:9 ratio, 1280 × 720 px minimum</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ░░ SONGS ░░ -->
+    <section class="section songs-section" id="songs">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">What We Play</p>
+          <h2 class="section-title">Sample Song Catalog</h2>
+        </header>
+
+        <div class="catalog-table-wrap" role="region" aria-label="Sample Song List">
+          <table class="catalog-table" aria-label="Song list">
+            <thead>
+              <tr>
+                <th scope="col" class="col-num">#</th>
+                <th scope="col" class="col-title">Song Title</th>
+                <th scope="col" class="col-artist">Original Artist</th>
+              </tr>
+            </thead>
+            <tbody id="catalogBody">
+
+              <!-- ══════════════════════════════════════════
+                   ADD / EDIT SONGS HERE
+                   Copy one <tr> block per song.
+                   Fill in the song title and the original artist.
+                   The # column updates automatically — just keep
+                   them in order or let the page number them.
+              ══════════════════════════════════════════ -->
+
+              <tr>
+                <td class="col-num">1</td>
+                <td class="col-title">Just Like Heaven</td>
+                <td class="col-artist">The Cure</td>
+              </tr>
+              <tr>
+                <td class="col-num">2</td>
+                <td class="col-title">Are You Gonna Go My Way</td>
+                <td class="col-artist">Lenny Kravitz</td>
+              </tr>
+              <tr>
+                <td class="col-num">3</td>
+                <td class="col-title">867-5309/Jenny</td>
+                <td class="col-artist">Tommy Tutone</td>
+              </tr>
+              <tr>
+                <td class="col-num">4</td>
+                <td class="col-title">Hot Blooded</td>
+                <td class="col-artist">Foreigner</td>
+              </tr>
+              <tr>
+                <td class="col-num">5</td>
+                <td class="col-title">Mr. Brightside</td>
+                <td class="col-artist">The Killers</td>
+              </tr>
+              <tr>
+                <td class="col-num">6</td>
+                <td class="col-title">Gimme All Your Loving</td>
+                <td class="col-artist">ZZ Top</td>
+              </tr>
+              <tr>
+                <td class="col-num">7</td>
+                <td class="col-title">Let's Go</td>
+                <td class="col-artist">The Cars</td>
+              </tr>
+              <tr>
+                <td class="col-num">8</td>
+                <td class="col-title">American Girl</td>
+                <td class="col-artist">Tom Petty</td>
+              </tr>
+              <tr>
+                <td class="col-num">9</td>
+                <td class="col-title">Go Your Own Way</td>
+                <td class="col-artist">Fleetwood Mac</td>
+              </tr>
+              <tr>
+                <td class="col-num">10</td>
+                <td class="col-title">Let's Dance</td>
+                <td class="col-artist">David Bowie</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+        <p class="catalog-note">All songs performed with full credit to their original artists.</p>
+      </div>
+    </section>
+
+    <!-- ░░ CONTACT ░░ -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+
+        <div class="contact-left">
+          <header class="section-header section-header--left">
+            <p class="section-eyebrow">Reach Out</p>
+            <h2 class="section-title">Contact</h2>
+          </header>
+          <p class="contact-intro">Booking inquiries, press requests, or just want to say you were there? Hit us up.</p>
+          <ul class="contact-details" role="list">
+            <li>
+              <span class="cd-label">Booking</span>
+              <a href="mailto:booking@radiochaos.com" class="cd-value">booking@radiochaos.com</a>
+            </li>
+            <li>
+              <span class="cd-label">Press</span>
+              <a href="mailto:press@radiochaos.com" class="cd-value">press@radiochaos.com</a>
+            </li>
+            <li>
+              <span class="cd-label">General</span>
+              <a href="mailto:hello@radiochaos.com" class="cd-value">hello@radiochaos.com</a>
+            </li>
+          </ul>
+          <div class="social-row" aria-label="Social media links">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              Instagram
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              Facebook
+            </a>
+            <a href="#" class="social-link" aria-label="Spotify">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 13.5c2.5-1 5.5-.8 7.5.5"/><path d="M7.5 10.5c3-1.2 7-1 9.5.7"/><path d="M8.5 16.5c2-0.7 4.5-.6 6 .5"/></svg>
+              Spotify
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+              YouTube
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="fname">Name</label>
+              <input type="text" id="fname" name="name" placeholder="Your name" autocomplete="name" required />
+            </div>
+            <div class="form-group">
+              <label for="femail">Email</label>
+              <input type="email" id="femail" name="email" placeholder="you@example.com" autocomplete="email" required />
+            </div>
+            <div class="form-group">
+              <label for="fsubject">Subject</label>
+              <select id="fsubject" name="subject">
+                <option value="">Select a topic…</option>
+                <option value="booking">Booking</option>
+                <option value="press">Press / Media</option>
+                <option value="merch">Merch</option>
+                <option value="fan">Fan Mail</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fmessage">Message</label>
+              <textarea id="fmessage" name="message" rows="5" placeholder="What's on your mind…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-note" id="formStatus" role="alert" aria-live="polite"></p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p class="footer-logo"><span class="logo-main">Radio</span><span class="logo-accent">Chaos</span></p>
+      <p class="footer-copy">&copy; <span id="footerYear"></span> Radio Chaos. All rights reserved.</p>
+      <a href="#top" class="back-to-top" aria-label="Back to top">↑ Top</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
